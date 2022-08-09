@@ -1,3 +1,7 @@
-.home-page {
+.home {
     margin: 0 auto;
+
+    &__title {
+        text-align: center;
+    }
 }
