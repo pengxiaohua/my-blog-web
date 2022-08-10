@@ -1,4 +1,6 @@
 import React, {FC} from "react"
+
+import Footer from '../components/Footer'
 import './index.scss'
 
 const HomePage: FC = () => {
@@ -11,6 +13,7 @@ const HomePage: FC = () => {
         <h3>随想</h3>
         <h3>读书笔记</h3>
         <h3>关于我</h3>
+        <Footer />
     </div>
   )
 }
