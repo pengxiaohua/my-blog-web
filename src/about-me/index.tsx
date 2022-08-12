@@ -12,7 +12,7 @@ type Props = IProps & Partial<DefaultProps>
 
 const AboutMe: FC<Props> = (props) => {
   return (
-    <div className="about-me">ABOUT ME</div>
+    <div className="about-me">ABOUT ME！</div>
   )
 }
 
