@@ -12,7 +12,7 @@ const HomePage: FC = () => {
         <h3>技术</h3>
         <h3>随想</h3>
         <h3>读书笔记</h3>
-        <h3>关于我</h3>
+        <h3>ABOUT ME</h3>
         <Footer />
     </div>
   )
