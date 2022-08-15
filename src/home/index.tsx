@@ -1,4 +1,5 @@
 import React, {FC} from "react"
+import { Link } from "react-router-dom";
 
 import Footer from '../components/Footer'
 import './index.scss'
@@ -12,7 +13,7 @@ const HomePage: FC = () => {
         <h3>技术</h3>
         <h3>随想</h3>
         <h3>读书笔记</h3>
-        <h3>ABOUT ME</h3>
+        <h3><Link to="/about-me">ABOUT ME</Link></h3>
         <Footer />
     </div>
   )
