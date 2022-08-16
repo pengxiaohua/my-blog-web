@@ -9,10 +9,10 @@ const HomePage: FC = () => {
     <div className="home">
         <h1 className="home__title">THIS IS MY BLOG！！</h1>
         <p>http://www.xiaohua.life</p>
-        <h3>首页</h3>
-        <h3>技术</h3>
-        <h3>随想</h3>
-        <h3>读书笔记</h3>
+        <h3>HOME</h3>
+        <h3>TECHNOLOGY</h3>
+        <h3>ESSAYS</h3>
+        <h3>READING NOTES</h3>
         <h3><Link to="/about-me">ABOUT ME</Link></h3>
         <Footer />
     </div>
