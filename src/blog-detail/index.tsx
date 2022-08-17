@@ -10,7 +10,7 @@ type Props = IProps & Partial<DefaultProps>
 
 const BlogDetail: FC<Props> = (props) => {
   return (
-    <div className="blog-detail">BLOG DETAIL！!</div>
+    <div className="blog-detail">THIS IS BLOG DETAIL！!</div>
   )
 }
 
