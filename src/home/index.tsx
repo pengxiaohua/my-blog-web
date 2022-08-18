@@ -8,8 +8,8 @@ const HomePage: FC = () => {
   return (
     <div className="home">
         <h1 className="home__title">THIS IS MY BLOG！！</h1>
-        <p>http://www.xiaohua.life</p>
-        <h3>HOME</h3>
+        <p>http://www.xiaohua.run</p>
+        <h3><Link to="/">HOME</Link></h3>
         <h3>TECHNOLOGY</h3>
         <h3>ESSAYS</h3>
         <h3>READING NOTES</h3>
