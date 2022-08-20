@@ -14,7 +14,7 @@ const footer: FC<Props> = (props) => {
   return (
     <div className="footer">
         <div className="footer__years">{`2022-${new Date().getFullYear()}`}</div>
-        <div className="footer__domain-name">http://www.xiaohua.run</div>
+        <div className="footer__domain-name">https://www.xiaohua.run</div>
     </div>
   )
 }
