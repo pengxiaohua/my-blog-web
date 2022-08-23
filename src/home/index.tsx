@@ -14,6 +14,10 @@ const HomePage: FC = () => {
         <h3>ESSAYS</h3>
         <h3>READING NOTES</h3>
         <h3><Link to="/about-me">ABOUT ME</Link></h3>
+        <article className="home__blog-list">
+          111
+        </article>
+        <div className="home__blog-aside">222</div>
         <Footer />
     </div>
   )
