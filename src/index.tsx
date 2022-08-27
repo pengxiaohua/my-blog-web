@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import reportWebVitals from './reportWebVitals';
-import Home from './home';
-import AboutMe from './about-me'
+import Home from './views/home';
+import AboutMe from './views/about-me'
 import './index.css';
 
 const root = ReactDOM.createRoot(

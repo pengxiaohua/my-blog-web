@@ -1,6 +1,8 @@
-import React, {FC} from "react"
+import React, { FC } from "react"
 
-interface IProps {}
+import Navigation from '../../components/Navigation'
+
+interface IProps { }
 
 const defaultProps = {}
 
@@ -10,7 +12,10 @@ type Props = IProps & Partial<DefaultProps>
 
 const BlogDetail: FC<Props> = (props) => {
   return (
-    <div className="blog-detail">THIS IS BLOG DETAIL！</div>
+    <div className="blog-detail">
+      <Navigation />
+      <h1>THIS IS BLOG DETAIL！</h1>
+    </div>
   )
 }
 
