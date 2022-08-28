@@ -1,26 +1,26 @@
 .home {
-    margin: 0 auto;
-    padding: 30px;
-    box-sizing: border-box;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
 
-    &__title {
-        text-align: center;
-    }
+  &__title {
+    text-align: center;
+  }
 
-    &__content {
-        display: flex;
-    }
+  &__content {
+    display: flex;
+  }
 
-    &__blog-list {
-        flex: 1;
-        margin-right: 30px;
-        background-color: red;
-        height: 600px;
-    }
+  &__blog-list {
+    flex: 1;
+    margin-right: 30px;
+    background-color: red;
+    height: 600px;
+  }
 
-    &__blog-aside {
-        width: 300px;
-        height: 600px;
-        background-color: blue;
-    }
+  &__blog-aside {
+    width: 300px;
+    height: 600px;
+    background-color: blue;
+  }
 }
