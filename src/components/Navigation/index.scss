@@ -1,7 +1,15 @@
 .navigation-page {
+  display: blok;
+
     &__nav-list {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+}
+
+@media (max-width: 750px) {
+  .navigation-page {
+    display: none;
+  }
 }
