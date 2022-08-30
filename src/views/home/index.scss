@@ -24,3 +24,9 @@
     background-color: blue;
   }
 }
+
+@media (max-width: 750px) {
+  .home__blog-aside {
+    display: none;
+  }
+}
