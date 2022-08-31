@@ -1,21 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import reportWebVitals from './reportWebVitals';
-import Home from './views/home';
-import AboutMe from './views/about-me'
-import './index.css';
+import Home from './pages/Home';
+import AboutMe from './pages/AboutMe'
+import './index.css'
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <BrowserRouter>
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<AboutMe />} />
       </Routes>
     </BrowserRouter>
-);
-reportWebVitals();
+  </React.StrictMode>
+)
