@@ -1,5 +1,5 @@
 # My Blog Web
-### [https:xiaohua.run](https:xiaohua.run)
+### [xiaohua.run](https:xiaohua.run)
 
 ## 技术栈
 - Vite 3
