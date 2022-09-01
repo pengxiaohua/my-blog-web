@@ -1,11 +1,23 @@
 .navigation-page {
   display: blok;
 
-    &__nav-list {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  &__nav-list {
+    display: flex;
+    float: right;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  &__nav-item {
+    list-style: none;
+    color: #333;
+
+    a {
+      text-decoration: none;
     }
+  }
 }
 
 @media (max-width: 750px) {

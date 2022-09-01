@@ -12,17 +12,17 @@ type DefaultProps = Readonly<typeof defaultProps>
 type Props = IProps & Partial<DefaultProps>
 
 const Navigation: FC<Props> = (props) => {
-    return (
-        <div className="navigation-page">
-            <nav className="navigation-page__nav-list">
-                <h3><Link to="/">HOME</Link></h3>
-                <h3>TECHNOLOGY</h3>
-                <h3>ESSAYS</h3>
-                <h3>READING NOTES</h3>
-                <h3><Link to="/about-me">ABOUT ME</Link></h3>
-            </nav>
-        </div>
-    )
+  return (
+    <div className="navigation-page">
+      <ul className="navigation-page__nav-list">
+        <li className="navigation-page__nav-item"><Link to="/">首页</Link></li>
+        <li className="navigation-page__nav-item">技术</li>
+        <li className="navigation-page__nav-item">随笔</li>
+        <li className="navigation-page__nav-item">读书笔记</li>
+        <li className="navigation-page__nav-item"><Link to="/about-me">关于</Link></li>
+      </ul>
+    </div>
+  )
 }
 
 Navigation.defaultProps = defaultProps

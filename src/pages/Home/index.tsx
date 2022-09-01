@@ -7,10 +7,15 @@ import './index.scss'
 const HomePage: FC = () => {
   return (
     <div className="home">
-      <h1 className="home__title">THIS IS MY BLOG！！</h1>
-      <div className="home__nav">
-        <Navigation />
-      </div>
+      <header className="home__header">
+        <div className="home__header__content">
+          <div className="home__header__logo">
+            xiaohua.run!
+          </div>
+          <Navigation />
+        </div>
+
+      </header>
       <div className="home__content">
         <article className="home__blog-list">
           BLOG-LIST
