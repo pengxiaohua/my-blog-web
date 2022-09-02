@@ -9,7 +9,7 @@ const HomePage: FC = () => {
     <div className="home">
       <header className="home__header">
         <div className="home__header__content">
-          <div className="home__header__logo">
+          <div className="home__header__logo font-bold">
             xiaohua.run!
           </div>
           <Navigation />
