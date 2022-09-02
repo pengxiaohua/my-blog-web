@@ -6,3 +6,4 @@
 - React 18
 - Typescript 4
 - SCSS
+- TailwindCSS
