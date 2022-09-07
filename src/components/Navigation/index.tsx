@@ -31,7 +31,7 @@ const Navigation: FC<Props> = (props) => {
           <Link to="/thinking" className="hover:text-sky-500 dark:hover:text-sky-400">随想</Link>
         </li>
         <li className="navigation-page__nav-item">
-          <Link to="/about-me" className="hover:text-sky-500 dark:hover:text-sky-400">关于</Link>
+          <Link to="/about-me" className="hover:text-sky-500 dark:hover:text-sky-400">关于我</Link>
         </li>
       </ul>
     </div>
