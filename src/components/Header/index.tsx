@@ -40,10 +40,10 @@ const Header: FC<Props> = (props) => {
           className="header__mode cursor-pointer w-5"
           onClick={()=>{
             setIsDark(!isDark)
-            window.__setPreferredTheme(isDark ? 'dark' : 'light')
+            window.__setPreferredTheme(isDark ? 'light' : 'dark')
           }}
         >
-          <img src={isDark ? darkModeIcon : lightModeIcon} alt="mode" />
+          <img src={isDark ? lightModeIcon : darkModeIcon} alt="mode" />
         </div>
         <div className="header__social-links">
           <div className="header__wechat-link cursor-pointer">
