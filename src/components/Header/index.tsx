@@ -1,8 +1,10 @@
 import React, { FC, useEffect, useState } from "react"
 
 import Navigation from '../Navigation'
-import githubIcon from '../../assets/github-icon.png'
-import wechatIcon from '../../assets/wechat-icon.png'
+import githubLightIcon from '../../assets/github-light-icon.png'
+import githubDarkIcon from '../../assets/github-dark-icon.png'
+import wechatLightIcon from '../../assets/wechat-light-icon.png'
+import wechatDarkIcon from '../../assets/wechat-dark-icon.png'
 import darkModeIcon from '../../assets/dark-mode-icon.png'
 import lightModeIcon from '../../assets/light-mode-icon.png'
 import './index.scss'
@@ -36,21 +38,21 @@ const Header: FC<Props> = (props) => {
           xiaohua.run!
         </div>
         <Navigation />
-        <div
-          className="header__mode cursor-pointer w-5"
-          onClick={()=>{
-            setIsDark(!isDark)
-            window.__setPreferredTheme(isDark ? 'light' : 'dark')
-          }}
-        >
-          <img src={isDark ? lightModeIcon : darkModeIcon} alt="mode" />
-        </div>
         <div className="header__social-links">
+          <div
+            className="header__mode cursor-pointer w-5"
+            onClick={() => {
+              setIsDark(!isDark)
+              window.__setPreferredTheme(isDark ? 'light' : 'dark')
+            }}
+          >
+            <img src={isDark ? lightModeIcon : darkModeIcon} alt="mode" />
+          </div>
           <div className="header__wechat-link cursor-pointer">
-            <img src={wechatIcon} alt="wechat" />
+            <img src={isDark ? wechatDarkIcon : wechatLightIcon} alt="wechat" />
           </div>
           <div className="header__github-link cursor-pointer">
-            <img src={githubIcon} alt="github" />
+            <img src={isDark ? githubDarkIcon : githubLightIcon} alt="github" />
           </div>
         </div>
       </div>

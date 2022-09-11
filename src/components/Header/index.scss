@@ -30,13 +30,17 @@
     align-items: center;
   }
 
-  &__wechat-link,
+  &__wechat-link {
+    width: 22px;
+    height: 22px;
+  }
+
   &__github-link {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
 
   &__wechat-link {
-    margin-right: 15px;
+    margin: 0 20px;
   }
 }
