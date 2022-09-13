@@ -26,7 +26,7 @@ export const navList = [
     route: '/thinking'
   },
   {
-    title: '关于我',
+    title: '关于',
     key: 'aboutMe',
     route: '/about-me'
   },
