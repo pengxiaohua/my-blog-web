@@ -14,8 +14,42 @@
 
   &__blog-list {
     flex: 1;
-    background-color: red;
     height: auto;
+  }
+
+  &__blog-item {
+    background-color: #f4f4f4;
+    color: #333333;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    &__title {
+      font-size: 18px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    &__time-and-author {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px 0 20px;
+    }
+
+    &__time {
+      margin-right: 15px;
+    }
+
+    &__content {
+      word-break: break-all;
+    }
+
+    &__tags {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   &__blog-aside {
