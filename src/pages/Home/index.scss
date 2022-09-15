@@ -10,6 +10,8 @@
     display: flex;
     max-width: 1080px;
     margin: 0 auto;
+    padding: 15px 0;
+    box-sizing: border-box;
   }
 
   &__blog-list {
