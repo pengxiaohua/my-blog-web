@@ -32,7 +32,7 @@ const Header: FC<Props> = (props) => {
   }, [])
 
   return (
-    <div className="header bg-[#ffffff] dark:bg-[#0B1120]">
+    <div className="header bg-white dark:bg-slate-900">
       <div className="header__content">
         <div className="header__logo font-bold dark:text-white text-grey-800">
           xiaohua.run!
