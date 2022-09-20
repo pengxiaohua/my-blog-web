@@ -25,7 +25,7 @@ const HomePage: FC = () => {
             ))
           }
         </article>
-        <div className="home__blog-aside">BLOG-ASIDE</div>
+        <div className="home__blog-aside border border-slate-900 dark:border-white">BLOG-ASIDE</div>
       </div>
 
       <Footer />
