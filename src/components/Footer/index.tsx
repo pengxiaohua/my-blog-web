@@ -1,4 +1,5 @@
 import React, {FC} from "react"
+import { Link } from "react-router-dom"
 
 import './index.scss'
 
@@ -13,7 +14,10 @@ type Props = IProps & Partial<DefaultProps>
 const footer: FC<Props> = (props) => {
   return (
     <div className="footer">
-        <div className="footer__years">{`2022-${new Date().getFullYear()}`}</div>
+        <div className="footer__years">
+          {`2022-${new Date().getFullYear()}`}
+          <Link to="/back-stage" style={{marginLeft: 10, fontSize: 14}}>后台管理</Link>
+        </div>
         <div className="footer__domain-name">https://www.xiaohua.run</div>
     </div>
   )
