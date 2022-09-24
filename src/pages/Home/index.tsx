@@ -31,7 +31,11 @@ const HomePage: FC = () => {
             ))
           }
         </article>
-        <div className="home__blog-aside border border-slate-900 dark:border-white">BLOG-ASIDE</div>
+        <div className="home__blog-aside border border-slate-900 dark:border-white">
+          博客日历
+          <br />
+          词云分类
+        </div>
       </div>
 
       <Footer />
