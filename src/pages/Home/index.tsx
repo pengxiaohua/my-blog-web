@@ -35,6 +35,8 @@ const HomePage: FC = () => {
           博客日历
           <br />
           词云分类
+          <br />
+          数据统计
         </div>
       </div>
 
