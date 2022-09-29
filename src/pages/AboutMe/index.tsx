@@ -1,6 +1,6 @@
 import React, { FC } from "react"
 
-import Navigation from "../../components/Navigation"
+import Header from "../../components/Header"
 import './index.scss'
 
 interface IProps { }
@@ -14,7 +14,7 @@ type Props = IProps & Partial<DefaultProps>
 const AboutMe: FC<Props> = (props) => {
   return (
     <div className="about-me">
-      <Navigation />
+      <Header />
       <h1>THIS IS ABOUT ME！</h1>
       <h3>小米(武汉)</h3>
       <h3>高德地图</h3>
