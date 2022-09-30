@@ -1,12 +1,22 @@
 import React, { FC } from "react"
+import { useNavigate } from 'react-router-dom'
 
 import Header from "../../components/Header"
 import Footer from '../../components/Footer'
 import { blogList } from "../../mock/blog-list"
+import { customHistory } from "../../utils"
 import readTimesIcon from '../../assets/read-times.svg'
 import './index.scss'
 
 const HomePage: FC = () => {
+
+  console.log({history});
+
+
+  const viewBlogDetail = (id) => {
+    customHistory.push(`/blog-detail/${id}`)
+  }
+
   return (
     <div className="home">
       <Header />
@@ -14,7 +24,11 @@ const HomePage: FC = () => {
         <article className="home__blog-list">
           {
             blogList.map(blog => (
-              <div className="home__blog-item border border-slate-900 dark:border-white" key={blog.id}>
+              <div
+                className="home__blog-item border border-slate-900 dark:border-white"
+                key={blog.id}
+                onClick={() => viewBlogDetail(blog.id)}
+              >
                 <div className="home__blog-item__title dark:text-white">{blog.title}</div>
                 <div className="home__blog-item__time-and-author dark:text-slate-400">
                   <div className="home__blog-item__time">{blog.createTime}</div>
