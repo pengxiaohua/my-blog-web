@@ -1,5 +1,6 @@
 import React, { FC } from "react"
 
+import ContentWrap from "../../components/ContentWrap"
 import Header from '../../components/Header'
 
 interface IProps { }
@@ -14,7 +15,7 @@ const BlogDetail: FC<Props> = (props) => {
   return (
     <div className="blog-detail">
       <Header />
-      <h1>THIS IS BLOG DETAIL！</h1>
+      <ContentWrap>blog-detail</ContentWrap>
     </div>
   )
 }

@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe'
 import BlogDetail from './pages/BlogDetail'
 import BackStage from './pages/BackStage';
+import Reading from './pages/Reading';
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -15,6 +16,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/reading" element={<Reading />} />
         <Route path={`/blog-detail/:id`} element={<BlogDetail />} />
         <Route path="/back-stage" element={<BackStage />} />
       </Routes>
