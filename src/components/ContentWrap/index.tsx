@@ -1,5 +1,7 @@
 import React, {FC} from "react"
 
+import Header from "../Header"
+import Footer from '../Footer'
 import './index.scss'
 
 interface IProps {
@@ -14,10 +16,15 @@ type Props = IProps & Partial<DefaultProps>
 
 const ContentWrap: FC<Props> = (props) => {
   const { children } = props
-  console.log({children});
 
   return (
-    <div className="content-wrap">{children}</div>
+    <div className="content-wrap">
+      <Header/>
+      <div className="content-wrap__content">
+        {children}
+      </div>
+      <Footer />
+    </div>
   )
 }
 

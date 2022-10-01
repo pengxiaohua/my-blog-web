@@ -15,7 +15,6 @@ type Props = IProps & Partial<DefaultProps>
 const BackStage: FC<Props> = (props) => {
   return (
     <div className="back-stage">
-      <Header />
       <ContentWrap>
         后台管理系统
       </ContentWrap>

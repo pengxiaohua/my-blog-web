@@ -14,7 +14,6 @@ type Props = IProps & Partial<DefaultProps>
 const BlogDetail: FC<Props> = (props) => {
   return (
     <div className="blog-detail">
-      <Header />
       <ContentWrap>blog-detail</ContentWrap>
     </div>
   )

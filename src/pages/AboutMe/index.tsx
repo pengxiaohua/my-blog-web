@@ -15,7 +15,6 @@ type Props = IProps & Partial<DefaultProps>
 const AboutMe: FC<Props> = (props) => {
   return (
     <div className="about-me">
-      <Header />
       <ContentWrap>
         <h1>THIS IS ABOUT ME！</h1>
         <h3>小米(武汉)</h3>

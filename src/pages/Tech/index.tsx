@@ -15,7 +15,6 @@ type Props = IProps & Partial<DefaultProps>
 const Tech: FC<Props> = (props) => {
   return (
     <div className="tech-page">
-      <Header/>
       <ContentWrap>TECH</ContentWrap>
     </div>
   )

@@ -1,8 +1,7 @@
 import React, { FC } from "react"
 import { useNavigate } from 'react-router-dom'
 
-import Header from "../../components/Header"
-import Footer from '../../components/Footer'
+import ContentWrap from "../../components/ContentWrap"
 import { blogList } from "../../mock/blog-list"
 import { customHistory } from "../../utils"
 import readTimesIcon from '../../assets/read-times.svg'
@@ -10,17 +9,13 @@ import './index.scss'
 
 const HomePage: FC = () => {
 
-  console.log({history});
-
-
   const viewBlogDetail = (id) => {
     customHistory.push(`/blog-detail/${id}`)
   }
 
   return (
     <div className="home">
-      <Header />
-      <div className="home__content">
+      <ContentWrap>
         <article className="home__blog-list">
           {
             blogList.map(blog => (
@@ -52,9 +47,7 @@ const HomePage: FC = () => {
           <br />
           数据统计
         </div>
-      </div>
-
-      <Footer />
+      </ContentWrap>
     </div>
   )
 }
