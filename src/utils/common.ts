@@ -13,7 +13,7 @@ export const navList = [
   {
     title: '随笔',
     key: 'essays',
-    route: '/essays'
+    route: '/essay'
   },
   {
     title: '读书',
