@@ -1,5 +1,7 @@
 import React, {FC} from "react"
+import ContentWrap from "../../components/ContentWrap"
 
+import Header from "../../components/Header"
 import './index.scss'
 
 interface IProps {}
@@ -12,7 +14,12 @@ type Props = IProps & Partial<DefaultProps>
 
 const BackStage: FC<Props> = (props) => {
   return (
-    <div className="back-stage">后台管理系统</div>
+    <div className="back-stage">
+      <Header />
+      <ContentWrap>
+        后台管理系统
+      </ContentWrap>
+    </div>
   )
 }
 
