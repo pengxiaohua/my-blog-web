@@ -7,9 +7,9 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe'
 import BlogDetail from './pages/BlogDetail'
 import BackStage from './pages/BackStage';
-import Reading from './pages/Reading';
+import EssayAndReading from './pages/EssayAndReading';
 import Tech from './pages/Tech';
-import Essay from './pages/Essay';
+import Web3 from './pages/Web3';
 import Thinking from './pages/Thinking';
 import './index.css'
 
@@ -19,8 +19,8 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tech" element={<Tech />} />
-        <Route path="/essay" element={<Essay />} />
-        <Route path="/reading" element={<Reading />} />
+        <Route path="/web3" element={<Web3 />} />
+        <Route path="/essay-and-reading" element={<EssayAndReading />} />
         <Route path="/thinking" element={<Thinking />} />
         <Route path="/about-me" element={<AboutMe />} />
         <Route path={`/blog-detail/:id`} element={<BlogDetail />} />

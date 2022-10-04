@@ -1,7 +1,6 @@
 import React, {FC} from "react"
 
 import ContentWrap from "../../components/ContentWrap"
-import Header from "../../components/Header"
 import './index.scss'
 
 interface IProps {}
@@ -12,14 +11,14 @@ type DefaultProps = Readonly<typeof defaultProps>
 
 type Props = IProps & Partial<DefaultProps>
 
-const Reading: FC<Props> = (props) => {
+const Web3: FC<Props> = (props) => {
   return (
-    <div className="reading-page">
-      <ContentWrap>reading</ContentWrap>
+    <div className="web3-page">
+      <ContentWrap>Web3</ContentWrap>
     </div>
   )
 }
 
-Reading.defaultProps = defaultProps
+Web3.defaultProps = defaultProps
 
-export default Reading
+export default Web3

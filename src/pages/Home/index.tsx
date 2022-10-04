@@ -1,10 +1,8 @@
 import React, { FC } from "react"
-import { useNavigate } from 'react-router-dom'
 
 import ContentWrap from "../../components/ContentWrap"
 import { blogList } from "../../mock/blog-list"
 import { customHistory } from "../../utils"
-import readTimesIcon from '../../assets/read-times.svg'
 import './index.scss'
 
 const HomePage: FC = () => {

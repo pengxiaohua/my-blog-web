@@ -1,7 +1,6 @@
 import React, {FC} from "react"
 
 import ContentWrap from "../../components/ContentWrap"
-import Header from "../../components/Header"
 import './index.scss'
 
 interface IProps {}
@@ -12,14 +11,14 @@ type DefaultProps = Readonly<typeof defaultProps>
 
 type Props = IProps & Partial<DefaultProps>
 
-const Essay: FC<Props> = (props) => {
+const EssayAndReading: FC<Props> = (props) => {
   return (
-    <div className="essay-page">
-      <ContentWrap>Essay</ContentWrap>
+    <div className="essay-and-reading">
+      <ContentWrap>EssayAndReading</ContentWrap>
     </div>
   )
 }
 
-Essay.defaultProps = defaultProps
+EssayAndReading.defaultProps = defaultProps
 
-export default Essay
+export default EssayAndReading

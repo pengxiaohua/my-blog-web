@@ -11,14 +11,14 @@ export const navList = [
     route: '/tech'
   },
   {
-    title: '随笔',
-    key: 'essays',
-    route: '/essay'
+    title: 'WEB3',
+    key: 'web3',
+    route: '/web3'
   },
   {
-    title: '读书',
-    key: 'reading',
-    route: '/reading'
+    title: '随笔&读书',
+    key: 'essayAndReading',
+    route: '/essay-and-reading'
   },
   {
     title: '随想',
