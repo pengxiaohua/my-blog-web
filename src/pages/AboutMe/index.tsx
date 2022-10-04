@@ -1,6 +1,5 @@
 import React, { FC } from "react"
 
-import Header from "../../components/Header"
 import ContentWrap from "../../components/ContentWrap"
 import './index.scss'
 

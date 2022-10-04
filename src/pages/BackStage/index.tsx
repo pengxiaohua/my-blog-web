@@ -1,7 +1,6 @@
 import React, {FC} from "react"
 import ContentWrap from "../../components/ContentWrap"
 
-import Header from "../../components/Header"
 import './index.scss'
 
 interface IProps {}
