@@ -18,7 +18,7 @@ const footer: FC<Props> = (props) => {
           {`2022-${new Date().getFullYear()}`}
           <Link to="/back-stage" style={{marginLeft: 10, fontSize: 14}}>back-stage</Link>
         </div>
-        <div className="footer__domain-name">https://www.xiaohua.run</div>
+        <div className="footer__domain-name">www.xiaohua.run</div>
     </div>
   )
 }
