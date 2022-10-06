@@ -6,7 +6,7 @@ export const navList = [
     route: '/'
   },
   {
-    title: '技术',
+    title: '前端',
     key: 'tech',
     route: '/tech'
   },
