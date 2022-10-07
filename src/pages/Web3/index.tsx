@@ -14,7 +14,7 @@ type Props = IProps & Partial<DefaultProps>
 const Web3: FC<Props> = (props) => {
   return (
     <div className="web3-page">
-      <ContentWrap>Web3</ContentWrap>
+      <ContentWrap>Web3、区块链、元宇宙等</ContentWrap>
     </div>
   )
 }
