@@ -1,4 +1,5 @@
 import React, { FC, useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 import Navigation from '../Navigation'
 import githubLightIcon from '../../assets/github-light-icon.png'
@@ -34,9 +35,9 @@ const Header: FC<Props> = (props) => {
   return (
     <div className="header bg-white dark:bg-slate-900">
       <div className="header__content">
-        <div className="header__logo font-bold dark:text-white text-grey-800">
+        <Link to="/" className="header__logo font-bold dark:text-white text-grey-800">
           xiaohua.run!
-        </div>
+        </Link>
         <Navigation />
         <div className="header__social-links">
           <div
