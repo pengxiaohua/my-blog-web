@@ -13,7 +13,7 @@ const HomePage: FC = () => {
 
   return (
     <div className="home">
-      <ContentWrap>
+      <ContentWrap flex>
         <article className="home__blog-list">
           {
             blogList.map(blog => (

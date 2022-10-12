@@ -13,7 +13,10 @@ type Props = IProps & Partial<DefaultProps>
 const BlogDetail: FC<Props> = (props) => {
   return (
     <div className="blog-detail">
-      <ContentWrap>blog-detail</ContentWrap>
+      <ContentWrap>
+        <div className="blog-detail__title">这是一个标题</div>
+        <div className="blog-detail__content">这是内容区域</div>
+      </ContentWrap>
     </div>
   )
 }
