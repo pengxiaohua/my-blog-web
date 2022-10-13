@@ -19,8 +19,8 @@ const AboutMe: FC<Props> = (props) => {
         <h3>高德地图</h3>
         <h3>小米(北京)</h3>
         <h3>金风科技</h3>
+        <h3>搜房网</h3>
       </ContentWrap>
-
     </div>
   )
 }
