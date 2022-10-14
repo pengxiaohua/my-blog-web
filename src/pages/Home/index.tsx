@@ -1,6 +1,7 @@
 import React, { FC } from "react"
 
 import ContentWrap from "../../components/ContentWrap"
+import Aside from "../../components/Aside"
 import { blogList } from "../../mock/blog-list"
 import { customHistory } from "../../utils"
 import './index.scss'
@@ -38,13 +39,7 @@ const HomePage: FC = () => {
             ))
           }
         </article>
-        <div className="home__blog-aside border border-slate-900 dark:border-white">
-          博客日历
-          <br />
-          词云分类
-          <br />
-          数据统计
-        </div>
+        <Aside />
       </ContentWrap>
     </div>
   )
