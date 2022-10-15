@@ -6,3 +6,9 @@
   height: auto;
   border-radius: 6px;
 }
+
+@media (max-width: 750px) {
+  .aside-part {
+    display: none;
+  }
+}
