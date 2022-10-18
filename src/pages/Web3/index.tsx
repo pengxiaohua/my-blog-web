@@ -1,6 +1,9 @@
 import React, {FC} from "react"
 
 import ContentWrap from "../../components/ContentWrap"
+import { blogList } from "../../mock/blog-list"
+import BlogItem from "../../components/BlogItem"
+import Aside from "../../components/Aside"
 import './index.scss'
 
 interface IProps {}
@@ -14,7 +17,14 @@ type Props = IProps & Partial<DefaultProps>
 const Web3: FC<Props> = (props) => {
   return (
     <div className="web3-page">
-      <ContentWrap>Web3、区块链、元宇宙、以太坊等</ContentWrap>
+      <ContentWrap flex>
+        <article className="home__blog-list">
+          {
+            blogList.map(blog => <BlogItem blog={blog} key={blog.id} />)
+          }
+        </article>
+        <Aside />
+      </ContentWrap>
     </div>
   )
 }
