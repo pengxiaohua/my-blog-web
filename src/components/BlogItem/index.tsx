@@ -36,17 +36,17 @@ const BlogItem: FC<Props> = (props) => {
       key={blog.id}
       onClick={() => viewBlogDetail(blog.id)}
     >
-      <div className="home__blog-item__title dark:text-white">{blog.title}</div>
-      <div className="home__blog-item__time-and-author dark:text-slate-400">
-        <div className="home__blog-item__time">{blog.createTime}</div>
-        <div className="home__blog-item__author">{blog.author}</div>
+      <div className="blog-item__title dark:text-white">{blog.title}</div>
+      <div className="blog-item__time-and-author dark:text-slate-400">
+        <div className="blog-item__time">{blog.createTime}</div>
+        <div className="blog-item__author">{blog.author}</div>
       </div>
-      <div className="home__blog-item__content dark:text-white">{blog.content}</div>
-      <div className="home__blog-item__bottom-info">
-        <div className="home__blog-item__read-times dark:text-white">
+      <div className="blog-item__content dark:text-white">{blog.content}</div>
+      <div className="blog-item__bottom-info">
+        <div className="blog-item__read-times dark:text-white">
           阅读次数：{blog.readTimes}
         </div>
-        <div className="home__blog-item__tags dark:text-white">{blog.tags}</div>
+        <div className="blog-item__tags dark:text-white">{blog.tags}</div>
       </div>
     </div>
   )
