@@ -20,7 +20,7 @@ const Tech: FC<Props> = (props) => {
       <ContentWrap flex>
         <article className="home__blog-list">
           {
-            blogList.map(blog => <BlogItem blog={blog} key={blog.id} />)
+            blogList.filter(item => item.type === 'tech').map(blog => <BlogItem blog={blog} key={blog.id} />)
           }
         </article>
         <Aside />

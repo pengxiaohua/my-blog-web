@@ -3,6 +3,7 @@ export const blogList = [{
   title: '第1篇博客',
   content: '第一篇博客内容',
   tags: '前端,react,nodejs',
+  type: 'web3',
   author: 'pengxiaohua',
   readTimes: 12,
   createTime: '2022-09-01 12:01:10'
@@ -11,6 +12,7 @@ export const blogList = [{
   title: '第2篇博客',
   content: '第一篇博客内容',
   tags: '前端,react,nodejs',
+  type: 'web3',
   author: 'pengxiaohua',
   readTimes: 12,
   createTime: '2022-09-01 12:01:10'
@@ -19,6 +21,7 @@ export const blogList = [{
   title: '第3篇博客',
   content: '第一篇博客内容',
   tags: '前端,react,nodejs',
+  type: 'web3',
   author: 'pengxiaohua',
   readTimes: 12,
   createTime: '2022-09-01 12:01:10'
@@ -27,6 +30,7 @@ export const blogList = [{
   title: '第4篇博客',
   content: '第一篇博客内容',
   tags: '前端,react,nodejs',
+  type: 'web3',
   author: 'pengxiaohua',
   createTime: '2022-09-01 12:01:10'
 },{
@@ -34,6 +38,7 @@ export const blogList = [{
   title: '第5篇博客',
   content: '第5篇博客内容',
   tags: '前端,react,nodejs',
+  type: 'web3',
   author: 'pengxiaohua',
   readTimes: 12,
   createTime: '2022-09-01 12:01:10'
@@ -42,6 +47,7 @@ export const blogList = [{
   title: '第6篇博客',
   content: '第6篇博客内容',
   tags: '前端,react,nodejs',
+  type: 'web3',
   author: 'pengxiaohua',
   readTimes: 12,
   createTime: '2022-09-01 12:01:10'
@@ -50,6 +56,7 @@ export const blogList = [{
   title: '第7篇博客',
   content: '第一篇博客内容',
   tags: '前端,react,nodejs',
+  type: 'tech',
   author: 'pengxiaohua',
   readTimes: 12,
   createTime: '2022-09-01 12:01:10'
@@ -58,6 +65,7 @@ export const blogList = [{
   title: '第一篇博客',
   content: '第一篇博客内容',
   tags: '前端,react,nodejs',
+  type: 'thinking',
   author: 'pengxiaohua',
   readTimes: 12,
   createTime: '2022-09-01 12:01:10'
