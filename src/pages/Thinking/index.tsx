@@ -4,6 +4,7 @@ import ContentWrap from "../../components/ContentWrap"
 import { blogList } from "../../mock/blog-list"
 import BlogItem from "../../components/BlogItem"
 import Aside from "../../components/Aside"
+import { BlogType } from "../../types/enums"
 import './index.scss'
 
 interface IProps {}
@@ -20,7 +21,7 @@ const Thinking: FC<Props> = (props) => {
       <ContentWrap flex>
         <article className="home__blog-list">
           {
-            blogList.filter(item => item.type === 'thinking').map(blog => <BlogItem blog={blog} key={blog.id} />)
+            blogList.filter(item => item.type === BlogType.Thinking).map(blog => <BlogItem blog={blog} key={blog.id} />)
           }
         </article>
         <Aside />
