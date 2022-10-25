@@ -38,7 +38,7 @@ export const blogList = [{
   title: '第5篇博客',
   content: '第5篇博客内容',
   tags: '前端,react,nodejs',
-  type: 'web3',
+  type: 'essayAndReading',
   author: 'pengxiaohua',
   readTimes: 12,
   createTime: '2022-09-01 12:01:10'
