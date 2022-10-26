@@ -52,9 +52,13 @@ const Header: FC<Props> = (props) => {
           <div className="header__wechat-link cursor-pointer">
             <img src={isDark ? wechatDarkIcon : wechatLightIcon} alt="wechat" />
           </div>
-          <div className="header__github-link cursor-pointer">
+          <a
+            href="https://github.com/pengxiaohua"
+            target="__blank"
+            className="header__github-link cursor-pointer"
+          >
             <img src={isDark ? githubDarkIcon : githubLightIcon} alt="github" />
-          </div>
+          </a>
         </div>
       </div>
     </div>
