@@ -8,6 +8,7 @@ import wechatLightIcon from '../../assets/wechat-light-icon.png'
 import wechatDarkIcon from '../../assets/wechat-dark-icon.png'
 import darkModeIcon from '../../assets/dark-mode-icon.png'
 import lightModeIcon from '../../assets/light-mode-icon.png'
+import wechatQcCode from '../../assets/wechat-qc-code.jpg'
 import './index.scss'
 
 interface IProps { }
@@ -24,6 +25,8 @@ const Header: FC<Props> = (props) => {
     return document.documentElement.classList.contains('dark')
   })
 
+  const [showQcCode, setShowQcCode] = useState(false)
+
   useEffect(() => {
     const theme = window.localStorage.getItem('theme')
     if (theme === 'dark') {
@@ -31,6 +34,14 @@ const Header: FC<Props> = (props) => {
       document.documentElement.classList.add('dark')
     }
   }, [])
+
+  const handleMouseEnter = () => {
+    setShowQcCode(true)
+  }
+
+  const handleMouseLeave = () => {
+    setShowQcCode(false)
+  }
 
   return (
     <div className="header bg-white dark:bg-slate-900">
@@ -40,6 +51,11 @@ const Header: FC<Props> = (props) => {
         </Link>
         <Navigation />
         <div className="header__social-links">
+          <img
+          className="header__social-links__qc-code"
+          style={{ display: showQcCode ? 'block' : 'none' }}
+          src={wechatQcCode}
+          alt="wechat-qc-code" />
           <div
             className="header__mode cursor-pointer w-5"
             onClick={() => {
@@ -49,7 +65,11 @@ const Header: FC<Props> = (props) => {
           >
             <img src={isDark ? lightModeIcon : darkModeIcon} alt="mode" />
           </div>
-          <div className="header__wechat-link cursor-pointer">
+          <div
+            className="header__wechat-link cursor-pointer"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             <img src={isDark ? wechatDarkIcon : wechatLightIcon} alt="wechat" />
           </div>
           <a
