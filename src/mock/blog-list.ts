@@ -10,7 +10,7 @@ export const blogList = [{
 },{
   id:2,
   title: '第2篇博客',
-  content: '第一篇博客内容',
+  content: '第2篇博客内容',
   tags: '前端,react,nodejs',
   type: 'web3',
   author: 'pengxiaohua',
@@ -19,7 +19,7 @@ export const blogList = [{
 },{
   id:3,
   title: '第3篇博客',
-  content: '第一篇博客内容',
+  content: '第3篇博客内容',
   tags: '前端,react,nodejs',
   type: 'web3',
   author: 'pengxiaohua',
@@ -28,7 +28,7 @@ export const blogList = [{
 },{
   id:4,
   title: '第4篇博客',
-  content: '第一篇博客内容',
+  content: '第4篇博客内容',
   tags: '前端,react,nodejs',
   type: 'web3',
   author: 'pengxiaohua',
@@ -54,7 +54,7 @@ export const blogList = [{
 },{
   id:7,
   title: '第7篇博客',
-  content: '第一篇博客内容',
+  content: '第7篇博客内容',
   tags: '前端,react,nodejs',
   type: 'tech',
   author: 'pengxiaohua',
@@ -62,8 +62,8 @@ export const blogList = [{
   createTime: '2022-09-01 12:01:10'
 },{
   id:8,
-  title: '第一篇博客',
-  content: '第一篇博客内容',
+  title: '第8篇博客',
+  content: '第8篇博客内容',
   tags: '前端,react,nodejs',
   type: 'thinking',
   author: 'pengxiaohua',
