@@ -1,6 +1,10 @@
 .navigation-page {
   display: blok;
 
+  @media (max-width: 750px) {
+    display: none;
+  }
+
   &__nav-list {
     display: flex;
     float: right;
@@ -18,11 +22,5 @@
       text-decoration: none;
       color: inherit;
     }
-  }
-}
-
-@media (max-width: 750px) {
-  .navigation-page {
-    display: none;
   }
 }

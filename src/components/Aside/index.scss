@@ -5,10 +5,8 @@
   margin-left: 20px;
   height: auto;
   border-radius: 6px;
-}
 
-@media (max-width: 750px) {
-  .aside-part {
+  @media (max-width: 750px) {
     display: none;
   }
 }
